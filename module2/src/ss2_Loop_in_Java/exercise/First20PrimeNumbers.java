@@ -1,9 +1,7 @@
 package ss2_Loop_in_Java.exercise;
-import java.util.Scanner;
 
 public class First20PrimeNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int n = 20;
         int count = 0;
         int number = 2;

@@ -36,5 +36,6 @@ public class DeleteElement {
         }
         System.out.println("Array after delete:");
         System.out.println(Arrays.toString(array));
+        sc.close();
     }
 }

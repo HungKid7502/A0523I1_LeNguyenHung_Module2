@@ -13,6 +13,7 @@ public class Main {
         double b = Double.parseDouble(sc.nextLine());
         System.out.println("Enter coefficient c: ");
         double c = Double.parseDouble(sc.nextLine());
+        sc.close();
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         if (quadraticEquation.getDiscriminant() < 0) {
             System.out.println("The equation has no roots");

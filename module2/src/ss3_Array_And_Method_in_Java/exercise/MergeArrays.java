@@ -30,5 +30,6 @@ public class MergeArrays {
         }
         System.out.println("The array after merging is: ");
         System.out.println(Arrays.toString(array3));
+        sc.close();
     }
 }

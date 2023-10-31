@@ -28,7 +28,6 @@ public class Geometry {
                 }
                 default : {
                     flag = false;
-                    break;
                 }
             }
         } while(flag);

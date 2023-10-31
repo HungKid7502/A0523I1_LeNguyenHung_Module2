@@ -27,5 +27,6 @@ public class FindTheSmallestValue {
             }
         }
         System.out.println("The smallest value in the array is " + min + " at index " + indexMin);
+        sc.close();
     }
 }

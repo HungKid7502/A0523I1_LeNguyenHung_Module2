@@ -34,5 +34,6 @@ public class AddElement {
         array[indexAdd] = elementAdd;
         System.out.printf("%-20s%s", "Element in array after additional: ", "");
         System.out.println(Arrays.toString(array));
+        sc.close();
     }
 }
