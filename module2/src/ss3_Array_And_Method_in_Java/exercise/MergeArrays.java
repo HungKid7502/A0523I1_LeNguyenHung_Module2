@@ -11,7 +11,7 @@ public class MergeArrays {
         int[] array1 = new int[size1];
         for (int i = 0; i < array1.length; i++) {
             System.out.println("Enter the element " + (i + 1) + " of the first array: ");
-            array1[i] = sc.nextInt();
+            array1[i] = (int)sc.nextFloat();
         }
         System.out.println("Enter the size of the second array:");
         int size2 = sc.nextInt();
