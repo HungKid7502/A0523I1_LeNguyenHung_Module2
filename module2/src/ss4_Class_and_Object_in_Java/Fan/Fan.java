@@ -4,7 +4,7 @@ public class Fan {
     private static final int SLOW = 1;
     private static final int MEDIUM = 2;
     private static final int HIGH = 3;
-    private int speed= SLOW;
+    private int speed = SLOW;
     private boolean ON = false;
     private double radius = 5;
     private String color = "blue";
