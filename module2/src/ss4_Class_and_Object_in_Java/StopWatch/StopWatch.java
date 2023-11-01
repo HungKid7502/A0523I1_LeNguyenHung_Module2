@@ -21,16 +21,16 @@ public class StopWatch {
         return endTime;
     }
 
-    public void start() {
-        startTime = LocalTime.now();
+    public long start() {
+        return System.currentTimeMillis();
     }
 
-    public void stop() {
-        endTime = LocalTime.now();
+    public long stop() {
+        return System.currentTimeMillis();
     }
 
-    public int getElapsedTime() {
-        int miliSecond = ((endTime.getHour() - startTime.getHour()) * 3600 + (endTime.getMinute() - startTime.getMinute()) * 60 + (endTime.getSecond() - startTime.getSecond()) * 1000);
+    public long getElapsedTime(long start, long end) {
+        long miliSecond = end - start;
         return miliSecond;
     }
 
