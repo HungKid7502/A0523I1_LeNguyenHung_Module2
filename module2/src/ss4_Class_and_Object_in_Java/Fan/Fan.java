@@ -53,7 +53,11 @@ public class Fan {
 
     @Override
     public String toString() {
-        return "Speed is: " + getSpeed() + ", Color is: " + getRadius() + ", Radius is:  " + getRadius()
-               + "fan is on";
+        if (isON())
+            return "Speed is: " + getSpeed() + ", Radius is: " + getRadius() + ", Color is:  " + getColor() + ", "
+                    + " fan is on";
+        else
+            return "Speed is: " + getSpeed() + ", Radius is: " + getRadius() + ", Color is:  " + getColor() + ", "
+                    + " fan is off";
     }
 }
