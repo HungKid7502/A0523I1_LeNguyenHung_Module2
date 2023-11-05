@@ -1,4 +1,4 @@
-package ss4_Class_and_Object_in_Java.Fan;
+package ss4_Class_and_Object_in_Java.exercise.Fan;
 
 public class Fan {
     private static final int SLOW = 1;

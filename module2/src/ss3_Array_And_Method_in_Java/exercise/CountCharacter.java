@@ -1,5 +1,6 @@
 package ss3_Array_And_Method_in_Java.exercise;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CountCharacter {
@@ -8,6 +9,9 @@ public class CountCharacter {
         // Bước 1: Khai báo chuỗi và gán giá trị
         System.out.println("Enter the string: ");
         String str = sc.nextLine();
+
+//      String[] arr = str.split("");
+//      Có thể dùng split() để chuyển chuỗi thành mảng
 
         // Bước 2: Khai báo một biến ký tự và gán hoặc nhập giá trị
         System.out.print("Enter the character to count: ");

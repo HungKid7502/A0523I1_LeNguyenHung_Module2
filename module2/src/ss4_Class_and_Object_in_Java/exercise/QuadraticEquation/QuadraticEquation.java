@@ -1,4 +1,4 @@
-package ss4_Class_and_Object_in_Java.QuadraticEquation;
+package ss4_Class_and_Object_in_Java.exercise.QuadraticEquation;
 
 public class QuadraticEquation {
     private double a, b, c;

@@ -1,4 +1,4 @@
-package ss4_Class_and_Object_in_Java.StopWatch;
+package ss4_Class_and_Object_in_Java.exercise.StopWatch;
 
 import java.time.LocalTime;
 

@@ -1,4 +1,4 @@
-package ss4_Class_and_Object_in_Java.Fan;
+package ss4_Class_and_Object_in_Java.exercise.Fan;
 
 public class Main {
     public static void main(String[] args) {
