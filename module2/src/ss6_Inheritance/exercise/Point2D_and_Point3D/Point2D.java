@@ -3,6 +3,8 @@ package ss6_Inheritance.exercise.Point2D_and_Point3D;
 public class Point2D {
     private float x = 0.0f;
     private float y = 0.0f;
+
+    private static int z = 5;
     public Point2D() {
     }
 
@@ -23,8 +25,9 @@ public class Point2D {
         return y;
     }
 
-    public void setY(float y) {
-        this.y = y;
+
+    public static void setZ(int z) {
+        Point2D.z = z;
     }
 
     public float[] getXY() {
