@@ -2,6 +2,7 @@ package view;
 
 import controller.CustomerController;
 import model.Customer;
+import service.ICustomerService;
 
 import java.util.Scanner;
 
@@ -47,7 +48,6 @@ public class View {
     }
 
 //    method thao tác được chọn từ người dùng
-
     public static void displayCustomerList(Customer[] customers) {
         for (int i = 0; i < customers.length; i++) {
             if (customers[i] != null) {

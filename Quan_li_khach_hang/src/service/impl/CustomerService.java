@@ -7,7 +7,8 @@ import service.ICustomerService;
 import javax.swing.*;
 
 public class CustomerService implements ICustomerService {
-    CustomerRepository customerRepository = new CustomerRepository();
+    private CustomerRepository customerRepository = new CustomerRepository();
+
     @Override
     public Customer[] getAll() {
         return customerRepository.getAll();

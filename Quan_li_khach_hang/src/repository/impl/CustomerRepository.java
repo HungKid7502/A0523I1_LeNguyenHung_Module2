@@ -4,6 +4,7 @@ import model.Customer;
 import repository.ICustomerRepository;
 
 public class CustomerRepository implements ICustomerRepository {
+//    tạo một mảng giả để lưu dữ liệu
     private static Customer[] customerList = new Customer[10];
 //    static {
 //        customerList[0] = new Customer(1, "Hung1");

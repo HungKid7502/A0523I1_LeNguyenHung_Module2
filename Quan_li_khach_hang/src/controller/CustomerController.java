@@ -4,7 +4,7 @@ import model.Customer;
 import service.impl.CustomerService;
 
 public class CustomerController {
-    CustomerService customerService = new CustomerService();
+    private CustomerService customerService = new CustomerService();
 
     public Customer[] getAll() {
         return customerService.getAll();
