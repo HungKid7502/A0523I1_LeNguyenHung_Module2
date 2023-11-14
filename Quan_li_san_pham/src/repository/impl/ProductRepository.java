@@ -10,9 +10,9 @@ public class ProductRepository implements IProductRepository {
     private static Product[] productList = new Product[10];
 
     static {
-        productList[0] = new Product(1, "Hung", 5, "Good");
-        productList[1] = new Product(2, "Hieu", 5, "Good");
-        productList[2] = new Product(3, "Chanh", 5, "Good");
+        productList[0] = new Product(1, "prd2", 5,"Good");
+        productList[1] = new Product(2, "prd2", 10, "Good");
+        productList[2] = new Product(3, "prd3", 15, "Good");
     }
 
     @Override
@@ -57,11 +57,15 @@ public class ProductRepository implements IProductRepository {
                         productList[i].setDescribe(scanner.nextLine());
                     }
                 }
+                System.out.println("Sửa sản phẩm thành công!!!");
+                break;
+            }
+            if (productList[i] == null) {
+                break;
             }
         }
-
         if (!flag) {
-            System.out.println("Không tìm thấy sản phẩm tương ứng");
+            System.out.println("Không tìm thấy sản phẩm tương ứng!!!");
         }
     }
 

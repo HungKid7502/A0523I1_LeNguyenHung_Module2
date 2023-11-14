@@ -41,7 +41,6 @@ public class View {
                 }
                 case UPDATE: {
                     updateById();
-                    System.out.println("Sửa sản phẩm thành công!!!");
                     break;
                 }
                 case DELETE: {

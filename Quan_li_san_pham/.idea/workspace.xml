@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588748b0-822e-4a53-b6b1-152de184b4d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/out/production/Quan_li_khach_hang/repository/impl/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/out/production/Quan_li_khach_hang/repository/impl/CustomerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/out/production/Quan_li_khach_hang/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/out/production/Quan_li_khach_hang/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/repository/impl/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/repository/impl/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/controller/Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/IRepositoryProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/impl/RepositoryProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/IServiceProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/impl/ServiceProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/view/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/IRepositoryProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/impl/RepositoryProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/IServiceProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/ServiceProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +82,7 @@
       <workItem from="1699928078734" duration="5265000" />
       <workItem from="1699941887604" duration="2032000" />
       <workItem from="1699955085427" duration="4746000" />
-      <workItem from="1699977775388" duration="3249000" />
+      <workItem from="1699977775388" duration="3900000" />
     </task>
     <servers />
   </component>
