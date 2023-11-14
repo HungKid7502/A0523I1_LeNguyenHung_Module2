@@ -5,7 +5,7 @@ import repository.ICustomerRepository;
 
 public class CustomerRepository implements ICustomerRepository {
 //    tạo một mảng giả để lưu dữ liệu
-    private static Customer[] customerList = new Customer[10];
+    private static Customer[] customerList = new Customer[3];
 //    static {
 //        customerList[0] = new Customer(1, "Hung1");
 //        customerList[1] = new Customer(1, "Hung2");
@@ -30,16 +30,11 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void edit(int idEdit, Customer customer) {
-        boolean flag = false;
         for (int i = 0; i < customerList.length; i++) {
             if (customerList[i].getId() == idEdit) {
-                flag = true;
                 customerList[i] = customer;
                 break;
             }
-        }
-        if (!flag) {
-            System.out.println("Không tìm thấy sản phẩm tương ứng!!!");
         }
     }
 }
