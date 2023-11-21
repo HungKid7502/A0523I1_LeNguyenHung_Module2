@@ -3,10 +3,11 @@ package controller;
 import model.Product;
 import service.IProductService;
 import service.impl.ProductService;
+import java.util.ArrayList;
 
 public class ProductController {
     private static IProductService productService = new ProductService();
-    public Product[] getList() {
+    public ArrayList<Product> getList() {
         return productService.getList();
     }
 
@@ -14,8 +15,8 @@ public class ProductController {
         productService.add(product);
     }
 
-    public void updateById(int id) {
-        productService.updateById(id);
+    public void editById(int id) {
+        productService.editById(id);
     }
 
     public void deleteById(int idDel) {
@@ -25,5 +26,4 @@ public class ProductController {
     public void find() {
         productService.find();
     }
-
 }

@@ -1,13 +1,14 @@
 package service;
 
 import model.Product;
+import java.util.ArrayList;
 
 public interface IProductService {
-    Product[] getList();
+    ArrayList<Product> getList();
 
     void add(Product product);
 
-    void updateById(int id);
+    void editById(int id);
 
     void deleteById(int idDel);
 
