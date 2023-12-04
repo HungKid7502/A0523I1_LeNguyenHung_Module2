@@ -7,12 +7,13 @@ import java.util.ArrayList;
 
 public class ProductController {
     private static IProductService productService = new ProductService();
-    public ArrayList<Product> getList() {
-        return productService.getList();
+
+    public void display() {
+        productService.display();
     }
 
-    public void add(Product product) {
-        productService.add(product);
+    public void addProduct() {
+        productService.addProduct();
     }
 
     public void editById(int id) {
@@ -21,9 +22,5 @@ public class ProductController {
 
     public void deleteById(int idDel) {
         productService.deleteById(idDel);
-    }
-
-    public void find() {
-        productService.find();
     }
 }

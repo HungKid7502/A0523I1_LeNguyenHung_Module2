@@ -29,9 +29,9 @@ public class ProductRepository implements IProductRepository {
     public void editById(int index) {
         System.out.println("Đã tìm thấy sản phẩm!!!");
         System.out.println("1. Sửa tên sản phẩm" +
-                "\n2. Sửa giá sản phẩm" +
-                "\n3. Sửa mô tả sản phẩm" +
-                "\nMời bạn chọn thông tin cần sửa: ");
+                           "\n2. Sửa giá sản phẩm" +
+                           "\n3. Sửa mô tả sản phẩm" +
+                           "\nMời bạn chọn thông tin cần sửa: ");
         int option = Integer.parseInt(scanner.nextLine());
         switch (option) {
             case 1: {
@@ -55,11 +55,7 @@ public class ProductRepository implements IProductRepository {
     public void deleteById(int index) {
         productList.remove(index);
     }
-
-    @Override
-    public void find() {
-    }
-}
+ }
 
 
 

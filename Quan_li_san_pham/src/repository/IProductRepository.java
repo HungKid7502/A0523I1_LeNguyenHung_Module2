@@ -11,6 +11,4 @@ public interface IProductRepository {
     void editById(int idEdit);
 
     void deleteById(int idDel);
-
-    void find();
 }
