@@ -4,7 +4,7 @@ import java.util.Scanner;
 import ss12_Java_Collection_Framework.exercise.Luyen_tap_su_dung_ArrayList_LinkedList.controller.ProductManager;
 import ss12_Java_Collection_Framework.exercise.Luyen_tap_su_dung_ArrayList_LinkedList.controller.Validation;
 
-public class main {
+public class Main {
     private static final int DISPLAY = 1;
     private static final int ADD = 2;
     private static final int DELETE = 3;
