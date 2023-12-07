@@ -53,6 +53,7 @@ public class View {
                 }
                 default: {
                     flag = false;
+                    System.exit(0);
                 }
             }
         } while (flag);

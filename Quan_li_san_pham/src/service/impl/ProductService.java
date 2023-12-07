@@ -6,6 +6,7 @@ import repository.impl.ProductRepository;
 import service.IProductService;
 import util.Validation;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ProductService implements IProductService {
@@ -15,7 +16,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void display() {
-        ArrayList<Product> products = productRepository.getList();
+        List<Product> products = productRepository.getList();
         System.out.println("| ++ Sản phẩm ++ | ++ Id ++ | ++ Tên ++ | ++ Giá ++ | ++ Mô tả ++  |");
         int stt = 0;
         for (Product o : products) {
@@ -53,14 +54,19 @@ public class ProductService implements IProductService {
 
     @Override
     public void editById(int idEdit) {
-        ArrayList<Product> products = productRepository.getList();
+        List<Product> products = productRepository.getList();
         boolean flag = false;
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getId() == idEdit) {
                 flag = true;
-                productRepository.editById(i);
-                System.out.println("Đã chỉnh sửa thành công!!!");
-                break;
+                System.out.println("Đã tìm thấy sản phẩm!!!");
+                while (true) {
+                    productRepository.editById(i);
+                    System.out.println("Đã chỉnh sửa thành công!!!");
+                    String message = "Bạn có muốn sửa thêm thông tin nào không?";
+                    if (confirm(message)) continue;
+                    else return;
+                }
             }
         }
 
@@ -71,7 +77,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void deleteById(int idDel) {
-        ArrayList<Product> products = productRepository.getList();
+        List<Product> products = productRepository.getList();
         boolean flag = false;
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getId() == idDel) {
@@ -91,11 +97,11 @@ public class ProductService implements IProductService {
         }
     }
 
-    public boolean checkId(int id) {
-        ArrayList<Product> products = productRepository.getList();
+    public boolean checkId(int idCheck) {
+        List<Product> products = productRepository.getList();
         for (Product o: products) {
-            if (o.getId() == id) {
-                System.out.println("Id đã tồn tại!!!");
+            if (o.getId() == idCheck) {
+                System.out.println("Id đã tồn tại!!!Vui lòng nhập lại");
                 return false;
             }
         }
