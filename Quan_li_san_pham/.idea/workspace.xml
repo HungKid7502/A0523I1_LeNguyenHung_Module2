@@ -17,15 +17,7 @@
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/ICustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/IProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/IProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/impl/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/impl/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/util/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/util/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/IProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/ProductManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/Validation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/view/main.class" afterDir="false" />
@@ -131,7 +123,7 @@
       <workItem from="1701779687359" duration="827000" />
       <workItem from="1701870475889" duration="2445000" />
       <workItem from="1701944025064" duration="1051000" />
-      <workItem from="1701971605226" duration="398000" />
+      <workItem from="1701971605226" duration="783000" />
     </task>
     <servers />
   </component>
