@@ -107,6 +107,7 @@ public class ProductService implements IProductService {
         }
         return true;
     }
+//    phương thức check Id trùng lặp
 
     public boolean confirm(String mess) {
         Scanner scanner = new Scanner(System.in);
