@@ -17,7 +17,7 @@ public class ProductService implements IProductService {
   @Override
   public void display() {
     List<Student> students = productRepository.getList();
-    System.out.println("| ++ Học sinh ++ | ++ Id ++ | ++ Tên ++ | ++ Điểm số ++ | ++ Năng lực++  |");
+    System.out.println("| ++ Học sinh ++ | ++ Id ++ | ++ Tên ++ | ++ Điểm số ++ | ++ Năng lực ++  |");
     int stt = 0;
     for (Student o : students) {
       System.out.printf("| %-14s | %-8s | %-9s | %-13s | %-14s |\n",

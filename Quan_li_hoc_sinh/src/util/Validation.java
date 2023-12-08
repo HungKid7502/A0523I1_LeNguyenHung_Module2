@@ -39,7 +39,7 @@ public class Validation {
             try {
                 double result = Double.parseDouble(scanner.nextLine());
                 if (result < min || result > max) {
-                    System.out.printf("Điểm phải trong khoảng %.f đến %.f\n", min, max);
+                    System.out.printf("Điểm phải trong khoảng %d đến %d\n", min, max);
                     continue;
                 }
                 return result;

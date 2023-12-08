@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProductRepository implements IProductRepository {
-  private final String FILE_PATH = "E:\\Quan_li_hoc_sinh\\src\\data\\data.csv";
+  private final String FILE_PATH = "D:\\C0723L1_LeNguyenHung_Module2\\Quan_li_hoc_sinh\\src\\data\\data.csv";
 
   private ReadAndWriteFile readAndWriteFile = new ReadAndWriteFile();
   private static Scanner scanner = new Scanner(System.in);
