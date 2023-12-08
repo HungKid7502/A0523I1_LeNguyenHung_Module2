@@ -7,14 +7,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProductRepository implements IProductRepository {
-    private static Scanner scanner = new Scanner(System.in);
-    private static List<Product> productList = new ArrayList<>();
+    private Scanner scanner = new Scanner(System.in);
+    private List<Product> productList = new ArrayList<>();
 
-    static {
-        productList.add(new Product(1, "Samsung", 20, "Màn hình đẹp"));
-        productList.add(new Product(2, "Xiaomi", 15, "Chip mạnh"));
-        productList.add(new Product(3, "Oppo", 13, "Pin trâu"));
-    }
+//    static {
+//        productList.add(new Product(1, "Samsung", 20, "Màn hình đẹp"));
+//        productList.add(new Product(2, "Xiaomi", 15, "Chip mạnh"));
+//        productList.add(new Product(3, "Oppo", 13, "Pin trâu"));
+//    }
 
     @Override
     public List<Product> getList() {
@@ -22,7 +22,7 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void add(Product product) {
+    public void addProduct(Product product) {
         productList.add(product);
     }
 

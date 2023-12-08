@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="588748b0-822e-4a53-b6b1-152de184b4d9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Y90ACMuL17hRMrLi9ZIDKASG5r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Quan_li_hoc_sinh",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.View" />
+      <module name="Quan_li_san_pham" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.View" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="588748b0-822e-4a53-b6b1-152de184b4d9" name="Changes" comment="" />
+      <created>1699922348405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699922348405</updated>
+      <workItem from="1699922349934" duration="2079000" />
+      <workItem from="1699928078734" duration="5265000" />
+      <workItem from="1699941887604" duration="2032000" />
+      <workItem from="1699955085427" duration="4746000" />
+      <workItem from="1699977775388" duration="5717000" />
+      <workItem from="1700033436588" duration="1474000" />
+      <workItem from="1700054927975" duration="3669000" />
+      <workItem from="1700186966233" duration="940000" />
+      <workItem from="1700324730434" duration="4491000" />
+      <workItem from="1700378421098" duration="3310000" />
+      <workItem from="1700484680158" duration="753000" />
+      <workItem from="1700588328906" duration="7317000" />
+      <workItem from="1700622293853" duration="6030000" />
+      <workItem from="1700658505724" duration="664000" />
+      <workItem from="1700757318482" duration="5003000" />
+      <workItem from="1701009100801" duration="1327000" />
+      <workItem from="1701091719206" duration="929000" />
+      <workItem from="1701092962970" duration="2402000" />
+      <workItem from="1701183614230" duration="3323000" />
+      <workItem from="1701187826955" duration="1843000" />
+      <workItem from="1701659462840" duration="3617000" />
+      <workItem from="1701663677343" duration="1058000" />
+      <workItem from="1701684720883" duration="1444000" />
+      <workItem from="1701693196975" duration="2144000" />
+      <workItem from="1701698111600" duration="1736000" />
+      <workItem from="1701709068485" duration="7876000" />
+      <workItem from="1701779687359" duration="827000" />
+      <workItem from="1701870475889" duration="2445000" />
+      <workItem from="1701944025064" duration="1051000" />
+      <workItem from="1701971605226" duration="872000" />
+      <workItem from="1701977296245" duration="1121000" />
+      <workItem from="1702023238710" duration="26000" />
+      <workItem from="1702027985169" duration="1064000" />
+      <workItem from="1702039645426" duration="102000" />
+      <workItem from="1702039909253" duration="3657000" />
+      <workItem from="1702043952098" duration="960000" />
+      <workItem from="1702044950556" duration="444000" />
+      <workItem from="1702045426406" duration="261000" />
+      <workItem from="1702060698597" duration="138000" />
+      <workItem from="1702060970591" duration="1045000" />
+      <workItem from="1702062073989" duration="1435000" />
+      <workItem from="1702063551317" duration="5922000" />
+      <workItem from="1702069559408" duration="2008000" />
+      <workItem from="1702071797729" duration="1992000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

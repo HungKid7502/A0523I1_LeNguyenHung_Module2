@@ -53,20 +53,24 @@ public class ProductManager {
         boolean flag = false;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getId() == idEdit) {
-                flag = true;
-                System.out.println("Đã tìm thấy sản phẩm!!!");
-                System.out.println("1. Sửa tên sản phẩm" +
-                        "\n2. Sửa giá sản phẩm" +
-                        "\nMời bạn chọn thông tin cần sửa: ");
-                int option = Integer.parseInt(scanner.nextLine());
-                if (option == 1) {
-                    System.out.println("Nhập tên mới: ");
-                    list.get(i).setName(scanner.nextLine());
-                } else if (option == 2) {
-                    System.out.println("Nhập giá mới:");
-                    list.get(i).setPrice(Double.parseDouble(scanner.nextLine()));
-                } else System.out.println("Không có thông tin tương ứng!!!");
-            }
+                while (true) {
+                    flag = true;
+                    System.out.println("Đã tìm thấy sản phẩm!!!");
+                    System.out.println("1. Sửa tên sản phẩm" +
+                                       "\n2. Sửa giá sản phẩm" +
+                                       "\nMời bạn chọn thông tin cần sửa: ");
+                    int option = Integer.parseInt(scanner.nextLine());
+                    if (option == 1) {
+                        System.out.println("Nhập tên mới: ");
+                        list.get(i).setName(scanner.nextLine());
+                    } else if (option == 2) {
+                        System.out.println("Nhập giá mới:");
+                        list.get(i).setPrice(Double.parseDouble(scanner.nextLine()));
+                    } else System.out.println("Không có thông tin tương ứng!!!");
+
+                    String message = "Bạn có muốn sửa thông tin nào nữa không?";
+                    if (confirm())
+                }
         }
 
         if (!flag) {

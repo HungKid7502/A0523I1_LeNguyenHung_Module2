@@ -26,7 +26,7 @@ public class Validation {
             System.out.println(mess);
             String result = scanner.nextLine();
             if (result.length() == 0 || result == null) {
-                System.out.println("Tên không được để trống!!!Vui lòng nhập lại");
+                System.out.println("Tên sản phẩm không được để trống!!!Vui lòng nhập lại");
                 continue;
             }
             return result;
@@ -39,7 +39,7 @@ public class Validation {
             try {
                 double result = Double.parseDouble(scanner.nextLine());
                 if (result < min || result > max) {
-                    System.out.println("Vượt mức giá quy định!!!Vui lòng nhập lại");
+                    System.out.printf("Giá phải từ %d đến %d!!!Vui lòng nhập lại\n", min, max);
                     continue;
                 }
                 return result;

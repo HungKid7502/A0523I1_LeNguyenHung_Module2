@@ -3,13 +3,15 @@ package view;
 import controller.CustomerController;
 import model.Customer;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class View {
     private static Scanner scanner = new Scanner(System.in);
     private static final int DISPLAY = 1;
     private static final int ADD = 2;
-    private static final int EDIT = 3;
+    private static final int DELETE = 3;
+    private static final int EDIT = 4;
 
     private static CustomerController customerController = new CustomerController();
 
@@ -20,23 +22,29 @@ public class View {
             System.out.println("Chọn chức năng quản lí: \n" +
                     "1. Hiển thị danh sách khách hàng\n" +
                     "2. Thêm khách hàng\n" +
-                    "3. Chỉnh sửa khách hàng\n" +
-                    "4. Kết thúc chương trình");
+                    "3. Xóa khách hàng\n" +
+                    "4. Chỉnh sửa khách hàng\n" +
+                    "5. Kết thúc chương trình\n" +
+                    "Mời bạn chọn chức năng quản lí: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case DISPLAY: {
-                    Customer[] customers = customerController.getAll();
+                    ArrayList<Customer> customers = customerController.getAll();
                     displayCustomerList(customers);
                     break;
                 }
                 case ADD: {
-                    inputCustomer();
+                    inputDataCustomer();
                     System.out.println("Thêm mới thành công!!!");
                     break;
                 }
-                case EDIT: {
-                    inputCustomerEdit();
+                case DELETE: {
+                    int idDel = DeleteById();
+                    customerController.deleteById(idDel);
                     break;
+                }
+                case EDIT: {
+
                 }
                 default: {
                     System.out.println("Chương trình kết thúc!!!");
@@ -47,17 +55,13 @@ public class View {
     }
 
     //    method thao tác được chọn từ người dùng
-    public static void displayCustomerList(Customer[] customers) {
-        for (int i = 0; i < customers.length; i++) {
-            if (customers[i] != null) {
-                System.out.println("Customer " + (i + 1) + ". " + customers[i]);
-            } else {
-                break;
-            }
+    public static void displayCustomerList(ArrayList<Customer> customers) {
+        for (Customer o : customers) {
+            System.out.println(o);
         }
     }
 
-    public static void inputCustomer() {
+    public static void inputDataCustomer() {
         while (true) {
             System.out.println("Nhập id khách hàng: ");
             int id = Integer.parseInt(scanner.nextLine());
@@ -74,6 +78,11 @@ public class View {
                 break;
             }
         }
+    }
+
+    public static int DeleteById() {
+        System.out.println("Nhập id khách hàng cần xóa: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public static void inputCustomerEdit() {

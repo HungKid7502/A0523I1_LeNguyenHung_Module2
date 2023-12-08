@@ -10,6 +10,8 @@ public class View {
     private static final int DELETE = 3;
     private static final int EDIT = 4;
 
+    private static View view = new View();
+
     private static Scanner scanner = new Scanner(System.in);
 
     private static ProductController productController = new ProductController();
@@ -41,13 +43,13 @@ public class View {
                 }
                 case EDIT: {
                     System.out.println("-----Chức năng chỉnh sửa sản phẩm-----");
-                    int idEdit = editById();
+                    int idEdit = view.editById();
                     productController.editById(idEdit);
                     break;
                 }
                 case DELETE: {
                     System.out.println("-----Chức năng xóa sản phẩm-----");
-                    int idDel = deleteById();
+                    int idDel = view.deleteById();
                     productController.deleteById(idDel);
                     break;
                 }
@@ -59,11 +61,11 @@ public class View {
         } while (flag);
     }
 
-    public static int editById() {
+    public int editById() {
         return validation.getInt("Nhập id sản phẩm cần sửa: ", 1);
     }
 
-    public static int deleteById() {
+    public int deleteById() {
         return validation.getInt("Nhập id sản phẩm cần xóa: ", 1);
     }
 }

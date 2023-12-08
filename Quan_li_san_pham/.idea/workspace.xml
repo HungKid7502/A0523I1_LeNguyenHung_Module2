@@ -17,7 +17,17 @@
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/ICustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/service/impl/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quan_li_khach_hang/src/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/IProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/IProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/service/impl/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quan_li_san_pham/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quan_li_san_pham/view/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/impl/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/ProductManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/controller/Validation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/out/production/module2/ss12_Java_Collection_Framework/exercise/Luyen_tap_su_dung_ArrayList_LinkedList/view/main.class" afterDir="false" />
@@ -48,19 +58,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C0723L1_LeNguyenHung_Module2/Quan_li_san_pham&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/C0723L1_LeNguyenHung_Module2/Quan_li_san_pham",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="view" />
@@ -123,7 +133,13 @@
       <workItem from="1701779687359" duration="827000" />
       <workItem from="1701870475889" duration="2445000" />
       <workItem from="1701944025064" duration="1051000" />
-      <workItem from="1701971605226" duration="783000" />
+      <workItem from="1701971605226" duration="872000" />
+      <workItem from="1701977296245" duration="1121000" />
+      <workItem from="1702023238710" duration="26000" />
+      <workItem from="1702027985169" duration="1064000" />
+      <workItem from="1702039352398" duration="285000" />
+      <workItem from="1702062026245" duration="46000" />
+      <workItem from="1702073883217" duration="519000" />
     </task>
     <servers />
   </component>

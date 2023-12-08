@@ -5,14 +5,13 @@ import repository.IProductRepository;
 import repository.impl.ProductRepository;
 import service.IProductService;
 import util.Validation;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ProductService implements IProductService {
-    private static IProductRepository productRepository = new ProductRepository();
+    private IProductRepository productRepository = new ProductRepository();
 
-    private static Validation validation = new Validation();
+    private Validation validation = new Validation();
 
     @Override
     public void display() {
@@ -43,7 +42,7 @@ public class ProductService implements IProductService {
             System.out.println("Nhập mô tả sản phẩm: ");
             String describe = scanner.nextLine();
             Product product = new Product(id, name, price, describe);
-            productRepository.add(product);
+            productRepository.addProduct(product);
 //          thêm sản phẩm vừa tạo vào list
             System.out.println("Thêm mới thành công!!!");
             String message = "Bạn muốn thêm sản phẩm nào khác không? (Y||N)";
@@ -71,7 +70,7 @@ public class ProductService implements IProductService {
         }
 
         if (!flag) {
-            System.out.println("Không tìm thấy sản phẩm tương ứng");
+            System.out.println("Không tìm thấy sản phẩm tương ứng!!!");
         }
     }
 
@@ -93,13 +92,13 @@ public class ProductService implements IProductService {
         }
 
         if (!flag) {
-            System.out.println("Không tìm thấy sản phẩm tương ứng");
+            System.out.println("Không tìm thấy sản phẩm tương ứng!!!");
         }
     }
 
     public boolean checkId(int idCheck) {
         List<Product> products = productRepository.getList();
-        for (Product o: products) {
+        for (Product o : products) {
             if (o.getId() == idCheck) {
                 System.out.println("Id đã tồn tại!!!Vui lòng nhập lại");
                 return false;

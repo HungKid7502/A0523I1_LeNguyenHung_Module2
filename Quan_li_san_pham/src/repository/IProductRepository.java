@@ -7,7 +7,7 @@ import java.util.List;
 public interface IProductRepository {
     List<Product> getList();
 
-    void add(Product product);
+    void addProduct(Product product);
 
     void editById(int idEdit);
 
