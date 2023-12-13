@@ -2,8 +2,6 @@ package view;
 
 import controller.StudentController;
 import util.CheckInputData;
-import util.Validation;
-
 import java.util.Scanner;
 
 public class Main {
