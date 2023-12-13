@@ -3,13 +3,12 @@ package repository;
 import model.Student;
 import java.util.List;
 
-public interface IProductRepository {
+public interface IStudentRepository {
     List<Student> getList();
 
     void addStudent(Student product);
 
-    void editById(int idEdit);
+    void editById(List<String> stringList);
 
     void deleteById(List<String> stringList);
-
 }

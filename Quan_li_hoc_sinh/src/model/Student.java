@@ -4,16 +4,19 @@ public class Student {
   private int id;
   private String name;
   private double mark;
-  private String capacity;
+  private String email;
+
+  private String dateOfBirth;
 
   public Student() {
   }
 
-  public Student(int id, String name, double mark, String capacity) {
+  public Student(int id, String name, double mark, String email, String dateOfBirth) {
     this.id = id;
     this.name = name;
     this.mark = mark;
-    this.capacity = capacity;
+    this.email = email;
+    this.dateOfBirth = dateOfBirth;
   }
 
   public int getId() {
@@ -40,25 +43,34 @@ public class Student {
     this.mark = mark;
   }
 
-  public String getCapacity() {
-    return capacity;
+  public String getEmail() {
+    return email;
   }
 
-  public void setCapacity(String capacity) {
-    this.capacity = capacity;
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public String getDateOfBirth() {
+    return dateOfBirth;
+  }
+
+  public void setDateOfBirth(String dateOfBirth) {
+    this.dateOfBirth = dateOfBirth;
   }
 
   @Override
   public String toString() {
-    return "Product{" +
-      "id=" + id +
-      ", name='" + name + '\'' +
-      ", mark=" + mark +
-      ", capacity='" + capacity + '\'' +
-      '}';
+    return "Student{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", mark=" + mark +
+            ", email='" + email + '\'' +
+            ", dateOfBirth='" + dateOfBirth + '\'' +
+            '}';
   }
 
   public String getInfoToCSV() {
-    return this.id + ";" + this.name + ";" + this.mark + ";" + this.capacity;
+    return this.id + ";" + this.name + ";" + this.mark + ";" + this.email + ";" + this.dateOfBirth;
   }
 }

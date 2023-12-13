@@ -1,12 +1,10 @@
 package controller;
 
-import model.Student;
-import service.IProductService;
-import service.impl.ProductService;
-import java.util.ArrayList;
+import service.IStudentService;
+import service.impl.StudentService;
 
-public class ProductController {
-    private IProductService productService = new ProductService();
+public class StudentController {
+    private IStudentService productService = new StudentService();
 
     public void display() {
         productService.display();

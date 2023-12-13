@@ -1,6 +1,6 @@
 package service;
 
-public interface IProductService {
+public interface IStudentService {
     void display();
 
     void addStudent();
