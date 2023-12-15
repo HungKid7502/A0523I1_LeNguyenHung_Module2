@@ -1,6 +1,6 @@
 package view;
 
-import Controller.FuramaController;
+import controller.FuramaController;
 
 public class View {
     public static void main(String[] args) {

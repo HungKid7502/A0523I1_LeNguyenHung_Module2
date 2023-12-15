@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository<Employee> {
-    private final String EMPLOYEE_FILE_PATH= "D:\\C0723L1_LeNguyenHung_Module2\\Manage_Furama_Resort\\src\\data\\employee.csv";
+    private final String EMPLOYEE_FILE_PATH= "D:\\C0723L1_LeNguyenHung_Module2\\Manage_Furama_Resort\\src\\data\\person\\employee.csv";
 
     @Override
     public List<Employee> getList() {
