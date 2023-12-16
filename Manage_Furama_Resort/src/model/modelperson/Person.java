@@ -90,4 +90,9 @@ public abstract class Person {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public String getInfoToCSV() {
+        return this.getId() + "," + this.getName() + "," + this.getDateOfBirth() + "," + this.getGender() + "," + this.getCMND() + "," + this.getPhoneNumber()
+                + "," + this.getEmail();
+    }
 }

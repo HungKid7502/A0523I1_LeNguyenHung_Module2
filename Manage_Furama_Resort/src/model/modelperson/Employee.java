@@ -50,8 +50,8 @@ public class Employee extends Person {
                 '}';
     }
 
+    @Override
     public String getInfoToCSV() {
-        return this.getId() + "," + this.getName() + "," + this.getDateOfBirth() + "," + this.getGender() + "," + this.getCMND() + "," + this.getPhoneNumber()
-                + "," + this.getEmail() + "," + this.getLevel() + "," + this.getPosition() + "," + this.getSalary();
+        return super.getInfoToCSV() + "," + this.getLevel() + "," + this.getPosition() + "," + this.getSalary();
     }
 }
