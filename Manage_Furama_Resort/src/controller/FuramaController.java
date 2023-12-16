@@ -93,13 +93,14 @@ public class FuramaController {
                     "\n2. Add new customer" +
                     "\n3. Edit customer" +
                     "\n4. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Mời bạn chọc chức năng quản lí:", 1, 4);
+            int newChoice = InputDataValidate.checkInputOption("Please choose the management information: ", 1, 4);
             switch (newChoice) {
                 case 1: {
-
+                    customerService.display();
+                    break;
                 }
                 case 2: {
-
+                    customerService.add();
                 }
                 case 3: {
 
