@@ -29,21 +29,20 @@ public class CustomerService implements ICustomerService {
         String typeCustomer;
         String address;
         while (true) {
-            System.out.println("Customer' s information");
-            idCustomer = InputDataValidate.checkInputDataRegex("Please enter customer' s id: ", ID_CUSTOMER_REGEX, "Customer' id must be in the correct format NV-YYYY, YYYY must be the numbers 0-9");
-            nameCustomer = InputDataValidate.checkInputDataRegex("Please enter customer' s name: ", NAME_CUSTOMER_REGEX, "Customer' name must capitalize the first letter of each word");
-            cmnd = InputDataValidate.checkInputDataRegex("Please enter customer' s cmnd: ", CMND_REGEX, "Customer' s CMND must have 9 or 12 numbers");
-            phoneNumber = InputDataValidate.checkInputDataRegex("Please enter customer' s phone number: ", PHONE_CUSTOMER_REGEX, "Customer' s phone number must start from 0 and must have 10 digits");
-            email = InputDataValidate.checkInputDataRegex("Please enter customer' s email: ", EMAIL_REGEX, "Customer' s email invalidate");
+            System.out.println("Thông tin của khách hàng");
+            idCustomer = InputDataValidate.checkInputDataRegex("Mời bạn nhập mã khách hàng: ", ID_CUSTOMER_REGEX, "Xin lỗi!!!Mã nhân viên phải đúng định dạng NV-YYYY, YYYY là số 0-9");
+            nameCustomer = InputDataValidate.checkInputDataRegex("Mời bạn nhập mã khách hàng: ", NAME_CUSTOMER_REGEX, "Xin lỗi!!!Tên nhân viên phải bắt đầu bằng chữ cái in hoa");
+            dateOfBirthCustomer = scanner.nextLine();
+            cmnd = InputDataValidate.checkInputDataRegex("Mời bạn nhập cmnd khách hàng: ", CMND_REGEX, "Xin lỗi!!!Chứng minh nhân dân phải gồm 9 số hoặc 12 số");
+            phoneNumber = InputDataValidate.checkInputDataRegex("Mời bạn nhập số điện thoại khách hàng: ", PHONE_CUSTOMER_REGEX, "Xin lỗi!!!Số điện thoại phải bắt đầu từ số 0 và phải gồm 10 số");
+            email = InputDataValidate.checkInputDataRegex("Mời bạn nhập số email khách hàngl: ", EMAIL_REGEX, "Xin lỗi!!!Email không đúng định dạng");
             gender = InputDataValidate.checkInputGender("Please enter customer' s gender: ");
-            System.out.println("Please enter customer' s type: ");
-            typeCustomer = scanner.nextLine();
-            System.out.println("Please enter customer' s address: ");
-            address = scanner.nextLine();
-            Customer customer = new Customer(idCustomer, nameCustomer, "07-05-02-", cmnd, gender, phoneNumber, email, typeCustomer, address);
+            typeCustomer = InputDataValidate.checkInputNull("Mời bạn nhập kiểu khách hàng: ", "Kiểu khách hàng");
+            address = InputDataValidate.checkInputNull("Mời bạn nhập địa chỉ khách hàng: ", "Địa chỉ");
+            Customer customer = new Customer(idCustomer, nameCustomer, dateOfBirthCustomer, cmnd, gender, phoneNumber, email, typeCustomer, address);
             customerRepository.add(customer);
 
-            String mess = "Do you want to add a new customer? (Y||N)";
+            String mess = "Bạn có muốn thêm mới nhân viên nào khác không? (Y||N)";
             if (InputDataValidate.confirm(mess)) continue;
             else break;
         }
@@ -52,8 +51,8 @@ public class CustomerService implements ICustomerService {
     @Override
     public void display() {
         List<Customer> customers = customerRepository.getList();
-        for (Customer s: customers) {
-            System.out.println(s.getInfoToCSV());
+        for (Customer customer: customers) {
+            System.out.println(customer.getInfoToCSV());
         }
     }
 

@@ -28,7 +28,7 @@ public class FuramaController {
         do {
             System.out.println("Chương trình quản lí Furama Resort");
             Menu.menuMain();
-            int choice = InputDataValidate.checkInputOption("Please choose the management information: ", 1, 6);
+            int choice = InputDataValidate.checkInputOption("Mời bạn nhập thông tin cần quản lí: ", 1, 6);
             switch (choice) {
                 case EMPLOYEE: {
                     menuEmployeeManagement();
@@ -44,9 +44,11 @@ public class FuramaController {
                 }
                 case BOOKING: {
                     menuBookingManagement();
+                    break;
                 }
                 case PROMOTION: {
                     menuPromtionManagement();
+                    break;
                 }
                 default: {
                     flag = false;
@@ -58,19 +60,21 @@ public class FuramaController {
 
     public void menuEmployeeManagement() {
         boolean flag = true;
-        System.out.println("Employee Management");
+        System.out.println("Quản lí nhân viên");
         do {
-            System.out.println("1. Display list employees" +
-                    "\n2. Add new employee" +
-                    "\n3. Edit employee" +
-                    "\n4. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Please choose the management function: ", 1, 4);
+            System.out.println("1. Hiển thị danh sách nhân viên" +
+                    "\n2. Thêm mới nhân viên" +
+                    "\n3. Chỉnh sửa nhân viên" +
+                    "\n4. Trở lại menu chính");
+            int newChoice = InputDataValidate.checkInputOption("Mời bạn nhập lựa chọn: ", 1, 4);
             switch (newChoice) {
                 case 1: {
+                    System.out.println("Chức năng hiển thị danh sách nhân viên");
                     employeeService.display();
                     break;
                 }
                 case 2: {
+                    System.out.println("Chức năng thêm mới nhân viên");
                     employeeService.add();
                     break;
                 }
@@ -79,7 +83,7 @@ public class FuramaController {
 
                 }
                 case 4: {
-                    break;
+                    flag = false;
                 }
             }
         } while (flag);
@@ -87,27 +91,29 @@ public class FuramaController {
 
     public void menuCustomerManagement() {
         boolean flag = true;
-        System.out.println("Customer Management");
+        System.out.println("Quản lí khách hàng");
         do {
-            System.out.println("1. Display list customers" +
-                    "\n2. Add new customer" +
-                    "\n3. Edit customer" +
-                    "\n4. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Please choose the management information: ", 1, 4);
+            System.out.println("1. Hiển thị danh sách khách hàng" +
+                    "\n2. Thêm mới khách hàng" +
+                    "\n3. Chỉnh sửa khách hàng" +
+                    "\n4. Trở lại menu chính");
+            int newChoice = InputDataValidate.checkInputOption("Mời bạn nhập lựa chọn: ", 1, 4);
             switch (newChoice) {
                 case 1: {
+                    System.out.println("Chức năng hiển thị danh sách khách hàng");
                     customerService.display();
                     break;
                 }
                 case 2: {
+                    System.out.println("Chức năng thêm mới khách hàng");
                     customerService.add();
+                    break;
                 }
                 case 3: {
 
                 }
                 case 4: {
-
-
+                    flag = false;
                 }
             }
         } while (flag);
@@ -115,26 +121,29 @@ public class FuramaController {
 
     public void menuFacilityManagement() {
         boolean flag = true;
-        System.out.println("Facility Management");
+        System.out.println("Quản lí cơ sở vật chất");
         do {
-            System.out.println("1. Display list facilities" +
-                    "\n2. Add new facility" +
-                    "\n3. Display list facility maintenance" +
-                    "\n4. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Mời bạn chọc chức năng quản lí:", 1, 4);
+            System.out.println("1. Hiển thị danh sách cơ sở vật chất" +
+                    "\n2. Thêm mới cơ sở vật chất" +
+                    "\n3. Hiển thị danh sách cơ sở vật chất đang bảo trì" +
+                    "\n4. Trở lại menu chính");
+            int newChoice = InputDataValidate.checkInputOption("Mời bạn nhập lựa chọn:", 1, 4);
             switch (newChoice) {
                 case 1: {
-
+                    System.out.println("Chức năng hiển thị danh sách cơ sở vật chất");
+                    facilityService.displayFacility();
+                    break;
                 }
                 case 2: {
-
+                    System.out.println("Chức năng thêm mới cơ sở vật chất");
+                    facilityService.addFacility();
+                    break;
                 }
                 case 3: {
 
                 }
                 case 4: {
-
-
+                    flag = false;
                 }
             }
         } while (flag);
@@ -150,7 +159,7 @@ public class FuramaController {
                     "\n4. Display list contracts" +
                     "\n5. Edit contracts" +
                     "\n6. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Mời bạn chọc chức năng quản lí:", 1, 4);
+            int newChoice = InputDataValidate.checkInputOption("Please choose the management information: ", 1, 4);
             switch (newChoice) {
                 case 1: {
 
@@ -176,7 +185,7 @@ public class FuramaController {
             System.out.println("1. Display list customers use service" +
                     "\n2. Display list customers get voucher" +
                     "\n3. Return main menu");
-            int newChoice = InputDataValidate.checkInputOption("Mời bạn chọc chức năng quản lí:", 1, 4);
+            int newChoice = InputDataValidate.checkInputOption("Please choose the management information: ", 1, 4);
             switch (newChoice) {
                 case 1: {
 

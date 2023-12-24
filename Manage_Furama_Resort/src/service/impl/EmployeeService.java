@@ -19,6 +19,7 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public void add() {
+        Scanner scanner = new Scanner(System.in);
         String idEmployee;
         String nameEmployee;
         String dateOfBirthEmployee;
@@ -29,22 +30,29 @@ public class EmployeeService implements IEmployeeService {
         String level;
         String position;
         double salary;
-        Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Employee' s information");
-            idEmployee = InputDataValidate.checkInputDataRegex("Please enter employee' id: ", ID_EMPLOYEE_REGEX, "Employee' id must be in the correct format NV-XXXX, XXXX must be the numbers 0-9");
-            nameEmployee = InputDataValidate.checkInputDataRegex("Please enter employee' name: ", NAME_EMPLOYEE_REGEX, "Employee' name must capitalize the first letter of each word");
-            cmnd = InputDataValidate.checkInputDataRegex("Please enter employee' s cmnd: ", CMND_REGEX, "Employee' s CMND must have 9 or 12 numbers");
-            phoneNumber = InputDataValidate.checkInputDataRegex("Please enter employee' s phone number: ", PHONE_NUMBER_REGEX, "Employee' s phone number must start from 0 and must have 10 digits");
-            email = InputDataValidate.checkInputDataRegex("Please enter employee' s email: ", EMAIL_REGEX, "Emploee' s email invalidate");
-            gender = InputDataValidate.checkInputGender("Please enter employee' s gender: ");
-            level = InputDataValidate.checkInputNull("Please enter employee' s level: ", "level");
-            position = InputDataValidate.checkInputNull("Please enter employee' s position: ", "position");
-            salary = InputDataValidate.checkInputSalary("Please enter employee' salary:", 0);
-            Employee employee = new Employee(idEmployee, nameEmployee, "07-05-02", gender, cmnd, phoneNumber, email, level, position, salary);
+            System.out.println("Thông tin của nhân viên");
+            idEmployee = InputDataValidate.checkInputDataRegex("Mời bạn nhập id nhân viên: ", ID_EMPLOYEE_REGEX, "Xin lỗi!!!Mã nhân viên phải đúng định dạng NV-XXXX, XXXX là số 0-9");
+            nameEmployee = InputDataValidate.checkInputDataRegex("Mời bạn nhập tên nhân viên: ", NAME_EMPLOYEE_REGEX, "Xin lỗi!!!Tên nhân viên phải bắt đầu bằng chữ cái in hoa");
+            dateOfBirthEmployee = scanner.nextLine();
+            cmnd = InputDataValidate.checkInputDataRegex("Mời bạn nhập cmnd nhân viên: ", CMND_REGEX, "Xin lỗi!!!Chứng minh nhân dân phải gồm 9 số hoặc 12 số");
+            phoneNumber = InputDataValidate.checkInputDataRegex("Mời bạn nhập số điện thoại nhân viên: ", PHONE_NUMBER_REGEX, "Xin lỗi!!!Số điện thoại phải bắt đầu từ số 0 và phải gồm 10 số");
+            email = InputDataValidate.checkInputDataRegex("Mời bạn nhập email nhân viên: ", EMAIL_REGEX, "Xin lỗi!!!Email không đúng định dạng");
+            gender = InputDataValidate.checkInputGender("Mời bạn nhập giới tính nhân viên: ");
+            level = InputDataValidate.checkInputNull("Mời bạn nhập trình độ nhân viên: ", "trình độ");
+            position = InputDataValidate.checkInputNull("Mời bạn nhập vị trí nhân viên: ", "vị trí");
+            while (true) {
+                salary = InputDataValidate.checkInputDouble("Mời bạn nhập lương nhân viên: ", "Tiền lương");
+                if (salary <= 0) {
+                    System.out.println("Tiền lương không thể nhỏ hơn 0!!!");
+                    continue;
+                }
+                break;
+            }
+            Employee employee = new Employee(idEmployee, nameEmployee, dateOfBirthEmployee, gender, cmnd, phoneNumber, email, level, position, salary);
             employeeRepository.add(employee);
 
-            String mess = "Do you want to add a new employee? (Y||N)";
+            String mess = "Bạn có muốn thêm mới nhân viên nào khác không? (Y||N)";
             if (InputDataValidate.confirm(mess)) continue;
             else break;
         }
@@ -54,8 +62,8 @@ public class EmployeeService implements IEmployeeService {
     @Override
     public void display() {
         List<Employee> employees = employeeRepository.getList();
-        for (Employee s: employees) {
-            System.out.println(s.getInfoToCSV());
+        for (Employee employee: employees) {
+            System.out.println(employee.getInfoToCSV());
         }
     }
 

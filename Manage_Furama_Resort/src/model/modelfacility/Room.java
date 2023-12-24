@@ -6,7 +6,7 @@ public class Room extends Facility{
     public Room() {
     }
 
-    public Room(int idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType, String freeService) {
+    public Room(String idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType, String freeService) {
         super(idService, nameService, usableArea, price, maxNumPeople, retalType);
         this.freeService = freeService;
     }
@@ -24,5 +24,10 @@ public class Room extends Facility{
         return "Room{" +
                 "freeService='" + freeService + '\'' +
                 '}';
+    }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV() + "," + this.freeService;
     }
 }

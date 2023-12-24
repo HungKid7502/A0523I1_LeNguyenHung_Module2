@@ -8,7 +8,7 @@ public class Villa extends Facility{
     public Villa() {
     }
 
-    public Villa(int idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType, String roomStandards, double areaPool, int numFloor) {
+    public Villa(String idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType, String roomStandards, double areaPool, int numFloor) {
         super(idService, nameService, usableArea, price, maxNumPeople, retalType);
         this.roomStandards = roomStandards;
         this.areaPool = areaPool;
@@ -46,5 +46,10 @@ public class Villa extends Facility{
                 ", areaPool=" + areaPool +
                 ", numFloor=" + numFloor +
                 '}';
+    }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV() + "," + this.roomStandards + "," + this.areaPool + "," + this.numFloor;
     }
 }

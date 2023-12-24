@@ -1,7 +1,7 @@
 package model.modelfacility;
 
 public abstract class Facility {
-    private int idService;
+    private String idService;
     private String nameService;
     private double usableArea;
     private double price;
@@ -11,7 +11,7 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(int idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType) {
+    public Facility(String idService, String nameService, double usableArea, double price, int maxNumPeople, String retalType) {
         this.idService = idService;
         this.nameService = nameService;
         this.usableArea = usableArea;
@@ -20,11 +20,11 @@ public abstract class Facility {
         this.retalType = retalType;
     }
 
-    public int getIdService() {
+    public String getIdService() {
         return idService;
     }
 
-    public void setIdService(int idService) {
+    public void setIdService(String idService) {
         this.idService = idService;
     }
 
@@ -78,5 +78,9 @@ public abstract class Facility {
                 ", maxNumPeople=" + maxNumPeople +
                 ", retalType='" + retalType + '\'' +
                 '}';
+    }
+
+    public String getInfoToCSV() {
+        return this.idService + "," + this.nameService + "," + this.usableArea + "," + this.price + "," + this.maxNumPeople + "," + this.retalType;
     }
 }
